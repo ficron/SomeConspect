@@ -1,6 +1,7 @@
-package main;
+package controllers;
 
 import jsp_p.Student;
+import main.MyModel;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
