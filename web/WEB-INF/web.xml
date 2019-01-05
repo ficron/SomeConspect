@@ -52,6 +52,17 @@
             <include-prelude>/jsp/header.jsp</include-prelude>
             <include-coda>/jsp/footer.jsp</include-coda>
         </jsp-property-group>
-
     </jsp-config>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>This is real name</realm-name>
+    </login-config>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>SecureJSP</web-resource-name>
+            <url-pattern>/secure/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
 </web-app>
